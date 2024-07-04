@@ -21,7 +21,7 @@ import joblib
 # In[2]:
 
 
-data = pd.read_excel('Classeur1.xlsx')
+data = pd.read_csv('Classeur1.csv')
 
 
 # In[3]:
