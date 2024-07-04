@@ -116,7 +116,10 @@ df['REVENUE'] = df['REVENUE'].fillna(median_revenue)
 df.drop(columns=['ZONE1', 'ZONE2'], inplace=True)
 
 # Afficher les cinq premières lignes du DataFrame après l'imputation
-print(df.head())
+# Afficher les 5 premières lignes de X_train
+print("\nPremières lignes de X_train :")
+print(X_train.head().to_markdown(index=False, numalign="left", stralign="left"))
+
 
 
 # In[ ]:
