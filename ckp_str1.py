@@ -113,7 +113,7 @@ df['MONTANT'] = df['MONTANT'].fillna(median_montant)
 df['REVENUE'] = df['REVENUE'].fillna(median_revenue)
 
 # Supprimer les colonnes `ZONE1` et `ZONE2`
-df.drop(columns=['ZONE1', 'ZONE2'], inplace=True)
+df.drop(columns=['ZONE1', 'ZONE2','user_id'], inplace=True)
 
 # Afficher les cinq premières lignes du DataFrame après l'imputation
 # Afficher les 5 premières lignes de X_train
