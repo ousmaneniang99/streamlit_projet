@@ -117,8 +117,7 @@ df.drop(columns=['ZONE1', 'ZONE2'], inplace=True)
 
 # Afficher les cinq premières lignes du DataFrame après l'imputation
 # Afficher les 5 premières lignes de X_train
-print("\nPremières lignes de X_train :")
-print(X_train.head().to_markdown(index=False, numalign="left", stralign="left"))
+
 
 
 
@@ -166,6 +165,8 @@ y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy:.2f}")
 print(classification_report(y_test, y_pred))
+print("\nPremières lignes de X_train :")
+print(X_train.head().to_markdown(index=False, numalign="left", stralign="left"))
 
 
 # In[13]:
