@@ -78,7 +78,7 @@ nltk==3.8.1
 numpy==1.25.2
 packaging==23.1
 pandas==2.0.3
-pandas-profiling==3.2.0
+pandas-profiling==3.2.0, >=3.2.0, <3.2.0
 panel==1.4.2
 param==2.1.0
 parso==0.8.4
